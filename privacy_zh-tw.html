@@ -27,7 +27,7 @@
     <p><strong>應用程式名稱：</strong>攝影大景預報</p>
     <p><strong>開發者：</strong>Eastman Ho</p>
     <p><strong>聯絡電子郵件：</strong><a href="mailto:eastmanhohao@gmail.com">eastmanhohao@gmail.com</a></p>
-    <p><strong>生效日期：</strong>2026 年 6 月 7 日</p>
+    <p><strong>生效日期：</strong>2026 年 7 月 12 日</p>
 
     <p>本隱私權政策說明「攝影大景預報」（以下簡稱「本應用程式」）如何收集、使用及保護您的個人資訊。我們致力於保護您的隱私，並確保您在使用本應用程式時享有透明且安全的體驗。</p>
 
@@ -46,20 +46,20 @@
     <h2>2. 我們如何使用這些資料</h2>
     
     <h3>2.1 提供預測服務</h3>
-    <p>您的 GPS 座標會透過加密連線傳送至本應用程式的雲端運算伺服器（託管於 Google Cloud，位於亞太地區），用於即時分析天文數據與天氣模式，計算完成後不予留存。</p>
+    <p>您的 GPS 座標會透過加密連線（HTTPS）傳送至本應用程式的雲端運算伺服器（託管於 Google Cloud，位於亞太地區），用於即時分析天文數據與天氣模式。應用程式內對同一地點的預測結果會在裝置端快取約 60 分鐘，期間內不會重複發送請求。另外，伺服器基於系統穩定性、除錯與防止濫用之目的，會自動產生連線紀錄（包含每次請求的座標與時間戳記），此類伺服器紀錄最長保留 7 天後自動刪除，且僅開發者本人可存取。</p>
 
     <h3>2.2 攝影建議</h3>
     <p>根據您的位置，評估當下天氣狀況是否適合攝影，並提供專業的拍攝建議。</p>
 
     <h3>2.3 AI 深度報告</h3>
-    <p>當您選擇解鎖 AI 深度攝影報告時，您的位置資訊及當地天氣數據將提交至第三方 AI 服務（Anthropic Claude 及 OpenAI）進行分析。這些服務均受其各自的隱私權政策約束。我們不會將您的個人識別資訊連同此請求一併傳送。</p>
+    <p>當您選擇解鎖 AI 深度攝影報告時，您的位置資訊及當地天氣數據將提交至第三方 AI 服務（OpenAI）進行分析。該服務受其隱私權政策約束。我們不會將您的個人識別資訊連同此請求一併傳送。</p>
 
     <h3>2.4 廣告服務</h3>
     <p>本應用程式採用 Google AdMob 提供廣告，以維持免費核心功能的開發與營運。廣告相關數據由 Google 管理，請參閱 Google 隱私權政策：<a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 
     <h2>3. 資料安全與儲存</h2>
     <ul>
-        <li>您的 GPS 資訊僅用於當次即時運算，運算完成後不予儲存於我們的伺服器。</li>
+        <li>您的 GPS 資訊主要用於當次即時運算。裝置端的預測結果快取約保留 60 分鐘；伺服器端基於除錯與安全目的所產生的連線紀錄（含座標與時間戳記）最長保留 7 天後自動刪除，且僅開發者本人可存取。</li>
         <li>我們不會將您的精確位置資訊販售或出租給任何第三方。</li>
         <li>所有資料傳輸均採用 HTTPS 加密。</li>
         <li>本應用程式不設帳號系統，不收集姓名、電子郵件或其他個人識別資訊。</li>
@@ -69,7 +69,6 @@
     <p>本應用程式使用以下第三方服務，各服務均有其獨立的隱私權政策：</p>
     <ul>
         <li><strong>Google AdMob（廣告）：</strong><a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-        <li><strong>Anthropic Claude（AI 分析）：</strong><a href="https://www.anthropic.com/privacy" target="_blank">https://www.anthropic.com/privacy</a></li>
         <li><strong>OpenAI（AI 分析）：</strong><a href="https://openai.com/policies/privacy-policy" target="_blank">https://openai.com/policies/privacy-policy</a></li>
         <li><strong>Open-Meteo（天氣資料）：</strong><a href="https://open-meteo.com/en/terms" target="_blank">https://open-meteo.com/en/terms</a></li>
         <li><strong>RainViewer（衛星雲圖）：</strong><a href="https://www.rainviewer.com/privacy-policy.html" target="_blank">https://www.rainviewer.com/privacy-policy.html</a></li>
